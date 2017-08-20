@@ -1,16 +1,11 @@
 <template>
   <div class="app">
-    <Navbar />
     <router-view />
   </div>
 </template>
 
 <script>
-import { Navbar } from './containers'
-
-export default {
-  components: { Navbar }
-}
+export default {}
 </script>
 
 <style src="bulma/css/bulma.css"></style>

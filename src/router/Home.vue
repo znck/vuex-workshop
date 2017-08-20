@@ -1,18 +1,19 @@
 <template>
-  <div class="container">
-    <div class="columns is-multiline">
-      <div v-for="i in 9" :key="i" class="column is-half-tablet is-one-third-desktop">
-        <Product />
-      </div>
-    </div>
+  <div class="home">
+    <Navbar title="Dummy Store">
+      <Wishlist />
+      <Cart />
+    </Navbar>
+    <ProductList />
   </div>
 </template>
 
 <script>
-import { Product } from '../components'
+import { Navbar } from '../components'
+import { Wishlist, Cart, ProductList } from '../containers'
 
 export default {
-  components: { Product }
+  components: { Navbar, Wishlist, Cart, ProductList }
 }
 </script>
 
