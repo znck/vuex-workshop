@@ -1,11 +1,13 @@
 dependencies:
   bulma: 0.5.1
+  cors: 2.8.4
   font-awesome: 4.7.0
   vue: 2.4.2
   vue-router: 2.7.0
   vuex: 2.3.1
 devDependencies:
   babel-plugin-transform-export-extensions: 6.22.0
+  babel-plugin-transform-object-rest-spread: 6.26.0
   babel-preset-vue-app: 1.2.1
   eslint: 4.5.0
   eslint-plugin-vue: 3.12.0
@@ -688,6 +690,12 @@ packages:
     dev: true
     resolution:
       integrity: sha1-tf1UIgqivFq1eqtxQMlAdUUDwac=
+  /cors/2.8.4:
+    dependencies:
+      object-assign: 4.1.1
+      vary: 1.1.1
+    resolution:
+      integrity: sha1-K9OB8usgECAQXNUOpZ2mMJBpRoY=
   /cross-spawn/5.1.0:
     dependencies:
       lru-cache: 4.1.1
@@ -1206,7 +1214,6 @@ packages:
     resolution:
       integrity: sha1-KzJxhOiZIQEXeyhWP7XnECrNDKk=
   /object-assign/4.1.1:
-    dev: true
     resolution:
       integrity: sha1-IQmtx5ZYh8/AXLvUQsrIv7s2CGM=
   /on-finished/2.3.0:
@@ -1568,7 +1575,6 @@ packages:
     resolution:
       integrity: sha1-ApT7kiu5N1FTVBxPcJYjHyh8ivg=
   /vary/1.1.1:
-    dev: true
     resolution:
       integrity: sha1-Z1Neu2lMHVIldFeYRmUyP1h+jTc=
   /vue-eslint-parser/2.0.0-beta.7:
@@ -1617,8 +1623,10 @@ registry: 'https://registry.npmjs.org/'
 shrinkwrapVersion: 3
 specifiers:
   babel-plugin-transform-export-extensions: ^6.22.0
+  babel-plugin-transform-object-rest-spread: ^6.26.0
   babel-preset-vue-app: ^1.2.1
   bulma: ^0.5.1
+  cors: ^2.8.4
   eslint: ^4.5.0
   eslint-plugin-vue: ^3.12.0
   express: ^4.15.4

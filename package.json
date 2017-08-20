@@ -28,6 +28,7 @@
   "homepage": "https://github.com/znck/vuex-workshop#readme",
   "dependencies": {
     "bulma": "^0.5.1",
+    "cors": "^2.8.4",
     "font-awesome": "^4.7.0",
     "vue": "^2.4.2",
     "vue-router": "^2.7.0",
@@ -35,6 +36,7 @@
   },
   "devDependencies": {
     "babel-plugin-transform-export-extensions": "^6.22.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-vue-app": "^1.2.1",
     "eslint": "^4.5.0",
     "eslint-plugin-vue": "^3.12.0",

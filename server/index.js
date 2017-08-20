@@ -1,9 +1,10 @@
 const http = require('http')
 const express = require('express')
+const cors = require('cors')
 const products = require('./products.json')
 
 const app = express()
-
+app.use(cors())
 app.get('/api/products', (_, res) => res.json(Object.values(products)))
 
 app.get('/api/products/:id', ({ params: { id } }, res) => {

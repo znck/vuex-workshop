@@ -24,7 +24,7 @@
     <a class="card-footer-item" @click="$emit('cart')">
       <span class="icon">
         <i class="fa" :class="[inCart ? 'fa-shopping-cart' : 'fa-cart-plus']"></i>
-      </span> {{ inCart ? 'Remove from cart' : 'Add to cart' }}
+      </span> {{ inCart ? 'Remove' : 'Add to cart' }}
     </a>
   </footer>
 </div>
@@ -37,32 +37,34 @@ export default {
   props: {
     name: {
       type: String,
-      default: 'Phasellus'
+      required: true
     },
 
     photo: {
       type: String,
-      default: 'http://bulma.io/images/placeholders/1280x960.png'
+      required: true
     },
 
     description: {
       type: String,
-      default: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.'
+      required: true
     },
 
     price: {
       type: Number,
-      default: 1.50
+      required: true
     },
 
     inWishlist: {
       type: Boolean,
-      default: false
+      default: false,
+      required: true
     },
 
     inCart: {
       type: Boolean,
-      default: false
+      default: false,
+      required: true
     }
   },
 
