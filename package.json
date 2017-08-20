@@ -1,0 +1,41 @@
+{
+  "name": "vuex-workshop",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Starter for Vuex Workshop at VueBangalore",
+  "main": "src/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "dev": "vue build -o src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/znck/vuex-workshop.git"
+  },
+  "keywords": [
+    "Workshop",
+    "Starter"
+  ],
+  "author": "Rahul Kadyan <hi@znck.me> (https://znck.me)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/znck/vuex-workshop/issues"
+  },
+  "homepage": "https://github.com/znck/vuex-workshop#readme",
+  "dependencies": {
+    "bulma": "^0.5.1",
+    "font-awesome": "^4.7.0",
+    "vue": "^2.4.2",
+    "vue-router": "^2.7.0",
+    "vuex": "^2.3.1"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-export-extensions": "^6.22.0",
+    "babel-preset-vue-app": "^1.2.1",
+    "eslint": "^4.5.0",
+    "eslint-plugin-vue": "^3.12.0"
+  }
+}
