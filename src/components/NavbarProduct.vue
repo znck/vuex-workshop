@@ -5,7 +5,7 @@
         <img :src="photo" :alt="name">
       </figure>
       <div class="media-content">
-        {{ name }} <br>
+        <span class="title">{{ name }}</span> <br>
         <small class="has-text-success">{{ price | currency }}</small>
       </div>
       <figure class="media-right">
@@ -41,6 +41,10 @@ export default {
 </script>
 
 <style scoped>
+.title {
+  text-transform: capitalize
+}
+
 .media {
   margin-right: 2rem;
 }

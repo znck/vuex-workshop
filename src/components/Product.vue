@@ -69,3 +69,10 @@ export default {
   filters: { currency }
 }
 </script>
+
+<style scoped>
+.title {
+  text-transform: capitalize;
+}
+</style>
+
