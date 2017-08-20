@@ -6,7 +6,7 @@
       </figure>
       <div class="media-content">
         {{ name }} <br>
-        <small class="has-text-success">₹{{ price }}</small>
+        <small class="has-text-success">{{ price | currency }}</small>
       </div>
       <figure class="media-right">
         <button class="delete is-small" @click="$emit('remove')"></button>
@@ -16,6 +16,8 @@
 </template>
 
 <script>
+import { currency } from '../filters'
+
 export default {
   props: {
     name: {
@@ -32,7 +34,9 @@ export default {
       type: Number,
       default: 1.50
     }
-  }
+  },
+
+  filters: { currency }
 }
 </script>
 

@@ -10,7 +10,7 @@
       <p class="title">{{ name }}</p>
       {{ description }}
       <br>
-      Price: <small class="has-text-success">₹{{ price }}</small>
+      Price: <small class="has-text-success">{{ price | currency }}</small>
     </div>
   </div>
 
@@ -31,6 +31,8 @@
 </template>
 
 <script>
+import { currency } from '../filters'
+
 export default {
   props: {
     name: {
@@ -62,6 +64,8 @@ export default {
       type: Boolean,
       default: false
     }
-  }
+  },
+
+  filters: { currency }
 }
 </script>
